@@ -1,0 +1,34 @@
+<html>
+<header>
+    <style>
+        h1 {
+            color:#12c9c2
+
+        }
+    </style>
+    <script>
+        var mi_variable = "esta es mi variable"
+        var contador = 0
+        var miCajaDeTexto = null
+
+        function onLoad() {    
+            miCajaDeTexto = document.getElementById("mi_id")
+            miCajaDeTexto.innerText = mi_variable
+        }
+
+        function onClick() {
+            contador = 1 + contador
+            miCajaDeTexto.innerText = mi_variable + " (" + contador + ")"
+        }
+    </script>
+</header>
+<body onload="onLoad()">
+    <div>
+        <h1 id="mi_id">Esta es mi prueba</h1>
+    </div>
+    <div>
+        <button onclick="onClick()">Click aqui</button>
+    </div>
+    
+</body>
+</html>
